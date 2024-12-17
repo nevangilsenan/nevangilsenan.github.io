@@ -1,0 +1,71 @@
+body{
+
+    background-color: rgba(23, 29, 49, 0.966);
+    color: white;
+}
+
+.mainosrivi{
+    background-color: rgb(19, 25, 43);
+    box-shadow: 0 0 10px 10px rgba(107, 122, 177, 0.219);
+}
+
+.text{
+    font-size: x-large;
+}
+
+.thing{
+    background-color: rgb(23, 29, 49);
+    box-shadow: 0 10px 10px -2px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 15vh;
+}
+
+.otsikko-juttu{
+    padding-top: 50px;
+}
+
+.wrap-con{
+    margin-bottom: 15vh;
+}
+
+.wrapper{
+    padding: 30px;
+    background-color: rgb(35, 45, 77);
+    border-radius: 5px;
+    box-shadow: 0 0 50px -2px rgba(15, 15, 15, 0.692);
+}
+
+.abt-me {
+    margin-top: 30px;
+}
+
+.column-juttu{
+    margin: 5% 0 5% 0;
+}
+
+.joku-juttu{
+    padding: 5%;
+    background-color: rgba(107, 122, 177, 0.219);
+    box-shadow: 0 0 10px 2px rgba(15, 15, 15, 0.438);
+    border-radius: 5px;
+}
+
+.projekti-text-holder{
+    font-size: medium;
+}
+
+.kuva{
+    max-width: 600px;
+    min-width: 200px;
+    width: 100%;
+}
+
+#skillsChart {
+    max-width: 650px; /* Maximum width */
+    max-height: 650px; /* Maximum height */
+    min-height: 250px;
+    min-width: 250px;
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Optional: center the chart */
+    border: 1px solid #ddd; /* Optional: visual border */
+}

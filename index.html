@@ -1,0 +1,168 @@
+<!--   cv/portfolio käyttäen bootstrap 5   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Nevan Gilsenan portfolio</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top mainosrivi">
+    <div class="container">
+      <a class="navbar-brand" href="#">Nevan Gilsenan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <span class="navbar-text">
+          <a href="#">
+            Github
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <div class="body-wrap">
+    <div class="px-4 py-5 text-center thing">
+      <h1 class="display-5 fw-bold otsikko-juttu">Hei! <br>Olen Nevan</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4"></p>
+        </div>
+      </div>
+    </div>
+    <section id="abt-me">
+      <div class="container wrap-con">
+        <div class="wrapper">
+          <h2 class="fw-bold">Minusta</h2>
+          <div class="abt-me">
+            <p>Olen Kuopiolainen 17 vuotias savon ammattiopistossa ohjelmisto kehittäjäksi opiskeleva nuori mies. 
+              <br>Harrastelen vapaa ajallani piirtelyä, pyöräilyä, 3d softan käyttöä, soittelen kitaraa ja koodailen. 
+              <br>Olen melko kilpailu henkinen ihminen ja perfektionisti.</p>
+              <p>Innostuin koodaamaan joskus ylä asteella ja se ehkä johtui siitä että halusin ymmärtää syvemmin miten softa toimii ja siitä mitä koodaaminen oikeastaan on joten aloitin javascriptin, html ja css alkeiden opettelun ja myöhemmin siirryin pythoniin ja javaan ja sitten kokeilu mielissä aloin opettelemaan c/c++ johon olen myöhemmin tykästynyt ja halu oppia kielestä enemmän on kasvanut. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="taidot">
+      <div class="container wrap-con">
+        <div class="wrapper">
+          <h2 class="fw-bold">Taidot</h2>
+          <p>Osaan alkeet ja perusteet useista kielistä. Alapuolella olevasta diagrammista voi visuaalisoida osaamiseni.</p>
+          <canvas id="skillsChart" width="400" height="400"></canvas>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container wrap-con">
+        <div class="wrapper">
+          <h2 class="fw-bold">Projektini</h2>
+          <div class="row">
+            <div class="col-lg-6 position-relative column-juttu">
+              <div class="joku-juttu">
+                <img src="" alt="">
+                <div class="projekti-text-holder">
+                  <h3>Projektityö</h3>
+                  <p>Tehtävänä oli tehdä joko netti kauppa tai peli. valitsen että teen pelin kolmen kaverin kanssa</p>
+                  <p>Unityn käyttö on minulle hieman hämärää joten joten en koodannut paljoa. Minä tein grafiikat, toinen luokkalainen teki musiikit ja äänet ja kolmas koodasi koska hänellä oli eniten kokemusta unitystä</p>                
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 position-relative column-juttu">
+              <div class="joku-juttu">
+                <img src="src/lehmapeli.png"width="200px" alt="" class="kuva">
+                <div class="projekti-text-holder">
+                  <h3>Lehmä Peli</h3>
+                  <p>Olen kehittelemässä Lehmä peliä jossa lehmän on tarkoitus hyppiä aitojen yli jotta saat pisteitä. <br> Sain idean peliin chromen dinosaurus pelistä</p>
+                  <p>Pelin on tarkoitus olla simppeli ohjelma jotta oppisin C++ kielen käyttöä ja SDL kirjaston hyödyntämistä. <br>Peli on selvästi vielä kesken.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="koulutus">
+      <div class="container wrap-con">
+        <div class="wrapper">
+          <h2 class="fw-bold">Koulutus</h2>
+          <div class="row">
+            <div class="col-lg-6 position-relative column-juttu">
+              <div class="joku-juttu koulutus-homma">
+                <h3>Hatsalan koulu</h3>
+                <p><b><i><u>2020-2023</u></i></b></p>
+              </div>
+            </div>
+            <div class="col-lg-6 position-relative column-juttu">
+              <div class="joku-juttu koulutus-homma">
+                <h3>Savon ammattiopisto</h3>
+                <p><b><i><u>2023-2026</u></i></b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><p class="nav-link px-2 text-muted">Puh: <i><u>0449747404</u></i></p></li>
+            <li class="nav-item"><p class="nav-link px-2 text-muted">Henkilökohtainen sähköposti: <i><u>nevygilse@gmail.com</u></i></p></li>
+          </ul>
+          <p class="text-center text-muted">© 2021 Company, Inc</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+    // Get the canvas element
+    const ctx = document.getElementById('skillsChart').getContext('2d');
+    const skillsData = {
+      labels: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Python', 'C#', 'C/C++', 'Java', 'SQL', 'Linux', 'Blender'],
+      datasets: [{
+        label: 'Skill Level',
+        data: [60, 40, 30, 50, 55, 50, 50, 45, 30, 60, 40],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.6)',
+          'rgba(54, 162, 235, 0.6)',
+          'rgba(255, 206, 86, 0.6)',
+          'rgba(75, 192, 192, 0.6)',
+          'rgba(153, 102, 255, 0.6)',
+          'rgba(156,78,160,255.6)',
+          'rgba(143,190,97,0.6)',
+          'rgba(24,55,126,0.6)',
+          'rgba(81,176,143,0.6)',
+          'rgba(178,25,196,0.6)',
+          'rgba(31,116,143,0.6)'
+        ],
+        borderWidth: 1
+      }]
+    };
+    const skillsChart = new Chart(ctx, {
+      type: 'polarArea',
+      data: skillsData,
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        plugins: {
+          legend: { position: 'right' },
+        },
+        scales: {
+          r: {
+            ticks: {
+              beginAtZero: true,
+              max: 100
+            }
+          }
+        }
+      }
+    });
+    </script>
+    
+</body>
+</html>
