@@ -41,10 +41,10 @@
         <div class="wrapper">
           <h2 class="fw-bold">Minusta</h2>
           <div class="abt-me">
-            <p>Olen kuopiolainen 17-vuotias Savon ammattiopistossa ohjelmisto kehittäjäksi opiskeleva nuori mies.
-              <br>Harrastelen vapaa ajallani piirtelyä, pyöräilyä, 3d softan käyttöä, soittelen kitaraa ja koodailen.
-              <br>Olen melko kilpailu henkinen ihminen ja perfektionisti.</p>
-              <p>Innostuin koodaamaan joskus yläasteella ja se ehkä johtui siitä, että halusin ymmärtää syvemmin, miten softa toimii ja siitä mitä koodaaminen oikeastaan on joten aloitin JavaScriptin, html ja CSS alkeiden opettelun ja myöhemmin siirryin pythoniin ja Javaan ja sitten kokeilu mielissä aloin opettelemaan C/C++ johon olen myöhemmin tykästynyt ja halu oppia kielestä enemmän on kasvanut.</p>
+            <p>Olen kuopiolainen 17-vuotias Savon ammattiopistossa ohjelmistokehittäjäksi opiskeleva nuori mies.
+              <br>Harrastelen vapaa-ajallani piirtelyä, pyöräilyä, 3d softan käyttöä, soittelen kitaraa ja koodailen.
+              <br>Olen melko kilpailuhenkinen ihminen ja perfektionisti.</p>
+              <p>Innostuin koodaamaan joskus yläasteella ja se ehkä johtui siitä, että halusin ymmärtää syvemmin, miten softa toimii ja siitä mitä koodaaminen oikeastaan on. Joten aloitin JavaScriptin, HTML ja CSS alkeiden opettelun ja myöhemmin siirryin Pythoniin ja Javaan. Sitten kokeilu mielissä aloin opettelemaan C/C++, johon olen myöhemmin tykästynyt ja halu oppia kielestä enemmän on kasvanut.</p>
           </div>
         </div>
       </div>
@@ -54,7 +54,35 @@
         <div class="wrapper">
           <h2 class="fw-bold">Taidot</h2>
           <p>Osaan alkeet ja perusteet useista kielistä. Alapuolella olevasta diagrammista voi visuaalisoida osaamiseni.</p>
-          <canvas id="skillsChart" width="400" height="400"></canvas>
+          <div class="progress" style="height:20px">
+              <div class="progress-bar bg-success" style="width:30%">
+                SQL
+              </div>
+              <div class="progress-bar bg-warning" style="width:10%">
+                JavaScript
+              </div>
+              <div class="progress-bar bg-danger" style="width:5%">
+                CSS
+              </div>
+              <div class="progress-bar bg-danger" style="width:5%">
+                PHP
+              </div>
+              <div class="progress-bar bg-danger" style="width:5%">
+                HTML
+              </div>
+              <div class="progress-bar bg-danger" style="width:5%">
+                Python
+              </div>
+              <div class="progress-bar bg-danger" style="width:10%">
+                Java
+              </div>
+              <div class="progress-bar bg-danger" style="width:15%">
+                C#
+              </div>
+              <div class="progress-bar bg-danger" style="width:20%">
+                C/C++
+              </div>
+        </div>
         </div>
       </div>
     </section>
@@ -117,52 +145,6 @@
           <p class="text-center text-muted">© 2021 Company, Inc</p>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script>
-    // Get the canvas element
-    const ctx = document.getElementById('skillsChart').getContext('2d');
-    const skillsData = {
-      labels: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Python', 'C#', 'C/C++', 'Java', 'SQL', 'Linux', 'Blender'],
-      datasets: [{
-        label: 'Skill Level',
-        data: [60, 40, 30, 50, 55, 50, 50, 45, 30, 60, 40],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.6)',
-          'rgba(54, 162, 235, 0.6)',
-          'rgba(255, 206, 86, 0.6)',
-          'rgba(75, 192, 192, 0.6)',
-          'rgba(153, 102, 255, 0.6)',
-          'rgba(156,78,160,255.6)',
-          'rgba(143,190,97,0.6)',
-          'rgba(24,55,126,0.6)',
-          'rgba(81,176,143,0.6)',
-          'rgba(178,25,196,0.6)',
-          'rgba(31,116,143,0.6)'
-        ],
-        borderWidth: 1
-      }]
-    };
-    const skillsChart = new Chart(ctx, {
-      type: 'polarArea',
-      data: skillsData,
-      options: {
-        responsive: true,
-        maintainAspectRatio: true,
-        plugins: {
-          legend: { position: 'right' },
-        },
-        scales: {
-          r: {
-            ticks: {
-              beginAtZero: true,
-              max: 100
-            }
-          }
-        }
-      }
-    });
-    </script>
-    
 </body>
 </html>
