@@ -1,5 +1,5 @@
 body{
-
+    overflow-x: hidden;
     background-color: rgba(23, 29, 49, 0.966);
     color: white;
 }
