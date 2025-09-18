@@ -68,3 +68,11 @@ body{
     margin: 20px auto; /* Optional: center the chart */
     border: 1px solid #ddd; /* Optional: visual border */
 }
+
+#roidrage-game{
+    width: 100%;
+}
+
+#linkki{
+    color: #50d6ff;
+}
