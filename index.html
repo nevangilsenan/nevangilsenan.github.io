@@ -18,7 +18,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <span class="navbar-text">
-          <a href="https://github.com/nevangilsenan">
+          <a href="https://github.com/nevangilsenan" target="_blank" class="github-linkki">
             Github
             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
               <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
@@ -46,6 +46,13 @@
               <br>Olen melko kilpailuhenkinen ihminen ja perfektionisti.</p>
               <p>Innostuin koodaamaan joskus yläasteella ja se ehkä johtui siitä, että halusin ymmärtää syvemmin, miten softa toimii ja siitä mitä koodaaminen oikeastaan on. Joten aloitin JavaScriptin, HTML ja CSS alkeiden opettelun ja myöhemmin siirryin Pythoniin ja Javaan. Sitten kokeilu mielissä aloin opettelemaan C/C++, johon olen myöhemmin tykästynyt ja halu oppia kielestä enemmän on kasvanut.</p>
           </div>
+          <h2 class="fw-bold">Kiinnostukset</h2>
+          <div class="kiinnostukset">
+            <p>
+              Pidän esim. backendin koodauksesta, pelien tekemisestä ja mikrokontrollerin esim. arduinon koodaamisesta. Sellaisen jutun koodaaminen missä huomaan että jotain tapahtuu on minusta hauskaa ja mielenkiintoista.
+              <br>Koen verkkosivujen ulkonäön muotoilun css kielellä hieman tylsäksi ja joskus jopa hankalaksi. En myöskään ole niin kiinnostunut enkä perehtynyt css kielen käytöstä.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -64,6 +71,10 @@
             <br>
             <div class="progress" style="height:20px">
               <div class="progress-bar" style="width:40%;">Typescript 45%</div>
+            </div>
+            <br>
+            <div class="progress" style="height:20px">
+              <div class="progress-bar" style="width:40%;">React 40%</div>
             </div>
             <br>
             <div class="progress" style="height:20px">
@@ -96,6 +107,21 @@
         </div>
       </div>
     </section>
+    <section id="tyokokemus">
+      <div class="container wrap-con">
+        <div class="wrapper">
+          <h2 class="fw-bold">Työkokemus</h2>
+          <div class="row">
+            <p>Viimeisimmällä TEO jaksolla tein verkkosivut passikuvaki yritykselle projektityönä tiimin kanssa. Käytimme siihen Wordpressiä johon koodasin teeman ja menin aika syvälle wordpressin ytimeen. 
+              <br>Asiakas halusi karusellin jossa on asikkaiden passikuvia suoraan netti sivun alussa. Joten TEO jakson aikana yritin tehdä wordpress pluginia jonka tarkoitus oli olla plugini jolla asiakas voisi helpommin graafisesti käyttää Slick karuselli kirjastoa. Loppuen lopuksi pluginiä ei tullut käytettyä, mutta se oli mainio mahdollisuus opetella wordpress plugini kehitystä. 
+              <br><a href="#">Tässä on linkki wordpress pluginin repoon</a>. Laitoin sen githubiin vielä kun olin kehittämässä sitä, mutta unohdin laittaa viimeisteltyn projektin sinne. Ja uskoisin että koulun kone on tyhjennetty joten en varmaan saa sitä takaisin mitenkään. 
+              <br>Mutta jospa reposta saa jonkun näköisen ymmäryksen ideastani.
+            </p>
+            <p>Työkokemusta minulla ei siis ole paljon. Mutta olen aina valmis ottamaan haasteet vastaan ja haluan näyttää kuinka motivoitunut olen työskentelemään ja oppimaan uutta, joten älkää ottako työkokemukseni vähäisyyttä miinuksena.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="projects">
       <div class="container wrap-con">
         <div class="wrapper">
@@ -114,7 +140,7 @@
             </div>
             <div class="col-lg-6 position-relative column-juttu">
               <div class="joku-juttu">
-                <img src="src/lehmapeli.png"width="200px" alt="" class="kuva">
+                <img src="src/lehmapeli.png"width="200px" alt="kuva lehmapelistä" class="kuva">
                 <div class="projekti-text-holder">
                   <h3>Lehmä Peli</h3>
                   <p>Olen kehittelemässä Lehmä peliä jossa lehmän on tarkoitus hyppiä aitojen yli jotta voit kerätä pisteitä. <br> Sain idean peliin chromen dinosaurus pelistä.</p>
@@ -126,10 +152,12 @@
           <div class="row">
             <div class="col-lg-6 position-relative column-juttu">
               <div class="joku-juttu">
-                <img src="" alt="">
+                <img src="src/slotGame.png" width="450px" alt="kuva slotmachine pelistä" class="kuva">
                 <div class="projekti-text-holder">
                   <h3>Slot machine peli</h3>
-                  <p>Olen tällä hetkellä koodaamassa automaattipeliä. Tässä projektissa käytän Typescriptiä HTML ja CSS kieliä. <a href="" id="linkki"><b>Tässä linkki repoon</b></a></p>
+                  <p>Olen tällä hetkellä koodaamassa automaattipeliä. Tässä projektissa käytän Typescriptiä HTML ja java kieliä. Tavoitteena on tehdä mahdollisimmman responsiivinen peli joka toimii myös mobiili laitteilla. 
+                    <br> Teen projektiin javalla spring boottia käyttäen backendin joka on vastuussa melko sattunnaisten voitto kuvioiden luomisesta, pyöräytys requestejen vastaan ottamisessa ja käyttäjän leikkirahan ja tietojen hallinnasta. Teen myös peliin tietokannan joka säilöö käyttäjän tiedot ja voitto määrät. 
+                    <br> Ensin yritän saada perus pelin toiminta kuntoon enne kuin lähden kehittämään mitään muuta. <!--  <a href="" id="linkki"><b>Tässä linkki repoon</b></a>  --></p>
                   <p>Projekti on vielä keskeneräinen.</p>
                 </div>
               </div>

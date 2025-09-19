@@ -4,6 +4,11 @@ body{
     color: white;
 }
 
+.github-linkki > svg{
+    padding: 5px;
+    margin-left: 5px;
+}
+
 .mainosrivi{
     background-color: rgb(19, 25, 43);
 }
